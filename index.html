@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Cleaner Tool - Remove Inline CSS Styles Online</title>
+    <meta
+      name="Description"
+      content="This HTML cleanup tool helps you clean HTML code so it is easier to work with. You can remove inline CSS styles, classes, and redundant table and br tags."
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="home">
+    <header id="header" class="header-one">
+      <div class="bg-white">
+        <div class="container">
+          <div class="logo-area">
+            <div class="row align-items-center">
+              <div class="logo text-center text-lg-left mb-md-5 mb-lg-0">
+                <a class="d-block h3" href="/">🧹HTML &amp; CSS Cleaner Tool</a>
+              </div>
+              <!-- logo end -->
+              <div class="col-md-7 ml-auto header-right">
+                <p class="text-center text-lg-right">
+                  <a class="mx-3" href="/">HTML Cleaner</a>
+                  <a class="mx-3" href="/css-cleaner/">CSS Cleaner</a>
+                  <a class="mx-3" href="/markdown-to-html/">Markdown to HTML</a>
+                  <a class="mx-3" href="/about-us/">About</a>
+                </p>
+              </div>
+              <!-- header right end -->
+            </div>
+            <!-- logo area end -->
+          </div>
+          <!-- Row end -->
+        </div>
+        <!-- Container end -->
+      </div>
+    </header>
+
+    <main>
+      <section class="hero bg-secondary">
+        <div class="container text-center">
+          <h2 class="h5 text-white text-center">HTML Cleaner</h2>
+          <h1 class="h3 text-white text-center">
+            Remove Inline CSS Styles &amp; Classes Online Tool
+          </h1>
+          <p class="text-white">
+            This HTML cleanup tool helps you clean up HTML code so it is easier
+            to work with. You can remove inline CSS styles, remove classes, and
+            remove table and br tags. Paste your code below to try the HTML
+            cleaner.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2>Step 1 - Paste Your HTML Code to Clean Up</h2>
+          <p>Choose your cleanup options:</p>
+          <input
+            type="checkbox"
+            id="removestyle"
+            name="removestyle"
+            value="removestyle"
+            checked=""
+          />
+          <label for="removestyle">Remove Inline Styles</label> 
+          <input
+            type="checkbox"
+            id="removeclass"
+            name="removeclass"
+            value="removeclass"
+            checked=""
+          />
+          <label for="removeclass">Remove CSS Classes</label> 
+          <input
+            type="checkbox"
+            id="removeid"
+            name="removeid"
+            value="removeid"
+            checked=""
+          />
+          <label for="removeid">Remove ID</label> 
+          <input
+            type="checkbox"
+            id="removebr"
+            name="removebr"
+            value="removebr"
+            checked=""
+          />
+          <label for="removebr">Remove br tags</label> 
+          <input
+            type="checkbox"
+            id="removetable"
+            name="removetable"
+            value="removetable"
+            checked=""
+          />
+          <label for="removetable">Remove Table Tags</label> 
+          <input
+            type="checkbox"
+            id="removespan"
+            name="removespan"
+            value="removespan"
+            checked=""
+          />
+          <label for="removespan">Remove Span Tags</label>
+          <input
+            type="checkbox"
+            id="removehtml"
+            name="removehtml"
+            value="removehtml"
+          />
+          <label for="removehtml">Remove All HTML</label>
+          <textarea name="" id="input" cols="30" rows="10" class="form-control">
+&lt;div class="test" style="color:red" id="test"&gt;&lt;table&gt;&lt;span&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/table&gt;Testing 123&lt;/div&gt;</textarea
+          >
+
+          <h2 class="mt-5">Step 2 - Click Button</h2>
+          <button class="btn btn-primary" id="cleanHTML">Get Clean HTML</button>
+          <br /><br />
+          <h2 class="mt-5">Step 3 - Select and Copy Your Cleaned Up Code</h2>
+          <textarea
+            name=""
+            id="output"
+            cols="30"
+            rows="10"
+            class="form-control"
+          ></textarea>
+        </div>
+      </section>
+    </main>
+
+    <div class="container py-5">
+      <hr class="container mb-5" />
+      <h4 class="mt-4"><a href="/">HTML &amp; CSS Cleaner Tool</a></h4>
+      <p>
+        As web developers and designers, we often encounter HTML files laden
+        with inline styles—those pesky CSS rules embedded directly within HTML
+        tags. While this approach might seem convenient at first, it can lead to
+        bloated code, slower page load times, and maintenance headaches. Fear
+        not! Our HTML and CSS Cleaner Tool comes to the rescue. Whether you’re a
+        seasoned developer or just starting your web journey, understanding the
+        importance of clean HTML and CSS is essential.
+      </p>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="copyright-info">
+                <span>Copyright © 2024</span>
+                <a href="https://bootstrapcreative.com/" class="text-white"
+                  >Bootstrap Creative</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Row end -->
+          <div
+            id="back-to-top"
+            data-spy="affix"
+            data-offset-top="10"
+            class="back-to-top position-fixed"
+          >
+            <button class="btn btn-primary" title="Back to Top">
+              <i class="fa fa-angle-double-up"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Container end -->
+      </div>
+      <!-- Copyright end -->
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Javascript Files -->
+    <script src="js/bootstrap.min.js" defer=""></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+      window.addEventListener('load', function (event) {
+        // Get references to the elements
+        const cleanButton = document.getElementById('cleanHTML');
+        const inputField = document.getElementById('input');
+        const outputField = document.getElementById('output');
+
+        cleanButton.addEventListener('click', function () {
+          console.log('clean');
+
+          let input = inputField.value;
+          let strippedString = input;
+
+          // Get references to all the checkboxes
+          const checkboxes = document.querySelectorAll('input[type=checkbox]');
+
+          // Iterate over each checkbox
+          checkboxes.forEach(function (checkbox) {
+            if (checkbox.checked) {
+              // Get the attribute name to remove based on the checkbox's ID
+              let attributeName = '';
+              switch (checkbox.id) {
+                case 'removestyle':
+                  attributeName = 'style';
+                  break;
+                case 'removeid':
+                  attributeName = 'id';
+                  break;
+                case 'removeclass':
+                  attributeName = 'class';
+                  break;
+                case 'removebr':
+                  strippedString = strippedString.replace(/<br\s*\/?>/g, '');
+                  break;
+                case 'removespan':
+                  strippedString = strippedString.replace(
+                    /<\/?span[^>]*>/g,
+                    ''
+                  );
+                  break;
+                case 'removetable':
+                  strippedString = strippedString.replace(
+                    /<\/?(table|thead|tbody|tr|td|th)[^>]*>/g,
+                    ''
+                  );
+                  break;
+                case 'removehtml':
+                  strippedString = strippedString.replace(/<[^>]*>?/gm, '');
+                  break;
+              }
+
+              // If an attribute name is specified, remove the attribute
+              if (attributeName !== '') {
+                strippedString = strippedString.replace(
+                  new RegExp(`\\s${attributeName}=(['"]).*?\\1`, 'g'),
+                  ''
+                );
+              }
+            }
+          });
+
+          outputField.value = strippedString;
+        });
+      });
+    </script>
+  </body>
+</html>
